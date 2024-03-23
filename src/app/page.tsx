@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import ImgScroll from "./components/ImgScroll";
 import Footer from "./components/Footer";
 import PriceSection from "./components/PriceSection";
+import ImgPreview from "./components/ImgPreview";
 
 export default function Home() {
   return (

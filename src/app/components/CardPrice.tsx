@@ -1,3 +1,11 @@
+interface Props {
+  title: string,
+  description: string,
+  price: string,
+  galleryItems: string,
+  buttonText: string,
+}
+
 export default function CardPrice({ title, description, price, galleryItems, buttonText }: any) {
   return (
     <div className="max-w-md mx-auto bg-transparent rounded-lg overflow-hidden">
@@ -13,7 +21,7 @@ export default function CardPrice({ title, description, price, galleryItems, but
           ))}
         </div>
         <div className="text-center">
-          <button className={`px-6 py-2 bg-green-500 text-white font-bold rounded-full hover:bg-green-600`}>{buttonText}</button>
+          <button className={`px-6 py-2 bg-green-600 hover:bg-green-500 text-white font-bold rounded-full `}>{buttonText}</button>
         </div>
       </div>
     </div>

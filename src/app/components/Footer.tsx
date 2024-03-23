@@ -6,15 +6,15 @@ export default function Footer() {
       <div className="container mx-auto px-4 items-center justify-between sm:px-8">
         <div className="flex justify-between">
           <div>
+            <span className="text-white">
+              © 2024 Your Company. All rights reserved.
+            </span>
+          </div>
+          <div>
             <a href="https://github.com/juniorsilvacc" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
               <FaGithub className="mr-2" />
               <span>GitHub</span>
             </a>
-          </div>
-          <div>
-            <span className="text-white">
-              © 2024 Your Company. All rights reserved.
-            </span>
           </div>
         </div>
       </div>

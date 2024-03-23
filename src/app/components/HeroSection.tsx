@@ -14,10 +14,10 @@ export default function HeroSection() {
         <span className="text-green-600 font-bold text-4xl sm:text-5xl">
           CityQR Generation
         </span>
-        <h2 className="mt-6 text-center text-slate-100 text-xl">
+        <h2 className="mt-6 text-center dark:text-slate-100 text-xl">
           Create personalized QR Codes using artificial intelligence.
         </h2>
-        <h4 className="mt-2 text-center text-slate-100">
+        <h4 className="mt-2 text-center dark:text-slate-100">
           Interact with other urban enthusiasts from around the world and share
           your creations.
         </h4>

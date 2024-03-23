@@ -11,7 +11,7 @@ export default function HeroSection() {
   return (
     <section className="container flex flex-col mx-auto items-center px-4 pb-12 pt-16 sm:px-8 sm:pb-16 sm:pt-20">
       <div className="mt-10 text-center">
-        <span className="text-green-600 font-bold text-4xl sm:text-5xl">
+        <span className="text-green-600 font-bold text-4xl sm:text-5xl font-signika-negative">
           CityQR Generation
         </span>
         <h2 className="mt-6 text-center dark:text-slate-100 text-xl">

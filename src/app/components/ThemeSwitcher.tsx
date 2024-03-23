@@ -19,7 +19,7 @@ export default function ThemeSwitcher() {
         onClick={toggleTheme}
         className={`${
           isLightMode ? 'bg-gray-300 text-gray-800' : 'bg-gray-800 text-white'
-        } flex items-center justify-center font-semibold py-2 px-4 rounded-full`}
+        } flex items-center justify-center font-semibold py-1 px-3 rounded-full`}
       >
         {isLightMode ? <FaSun className="mr-1" /> : <FaMoon className="mr-1" />}
         {isLightMode ? '' : ''}

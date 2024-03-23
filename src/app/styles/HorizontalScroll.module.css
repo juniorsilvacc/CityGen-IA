@@ -1,0 +1,12 @@
+.scrollContainer {
+  animation: scrollAnimation 5000s linear infinite;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% * 1000));
+  }
+}

@@ -1,6 +1,7 @@
 import { getServerSession } from "next-auth";
 import Link from "next/link";
 import ButtonLogin from "./ButtonLogin";
+import ImageWithButton from "./ImageWithButton";
 
 export default async function Header() {
   const session = await getServerSession();
@@ -15,7 +16,7 @@ export default async function Header() {
         </Link>
         <div className="flex items-center gap-4">
           {session ? (
-            <img src={userImage} alt="User Profile" className="max-w-10 max-h-10 rounded-3xl" />
+            <ImageWithButton/>
           ) : (
             <ButtonLogin />
           )}

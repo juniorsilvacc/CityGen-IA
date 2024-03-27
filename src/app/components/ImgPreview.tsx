@@ -8,7 +8,7 @@ export default function ImgPreview({ imageUrl }: Props) {
       <img
         src={imageUrl}
         alt="Imagem Selecionada"
-        className="rounded-2xl w-72"
+        className="rounded-2xl w-64"
       />
     </section>
   );

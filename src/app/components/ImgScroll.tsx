@@ -6,21 +6,33 @@ import ImgPreview from "./ImgPreview";
 
 export default function ImgScroll() {
   const imageUrls = [
-    "/1.png",
-    "/2.png",
-    "/3.png",
-    "/4.png",
-    "/5.png",
-    "/6.png",
-    "/7.png",
+    "/Antartica.png",
+    "/Boston.png",
+    "/China.png",
+    "/Dubai.png",
+    "/Egito.png",
+    "/Inglaterra.png",
+    "/Japão.png",
+    "/Londres.png",
+    "/Paris.png",
+    "/Rio de Janeiro.png",
+    "/Saharan Desert.png",
+    "/San Francisco.png",
+    "/São Paulo.png",
+    "/Suiça.png",
   ];
   const repeatCount = 1000;
 
-  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   const handleImageClick = (index: any) => {
-    setSelectedImageIndex(index === selectedImageIndex ? null : index);
+    setSelectedImageIndex(index);
   };
+
+  const selectedImageUrl = imageUrls[selectedImageIndex % imageUrls.length];
+  const selectedImageName = selectedImageUrl
+    .substring(selectedImageUrl.lastIndexOf("/") + 1)
+    .replace(".png", "");
 
   return (
     <div className="w-full overflow-x-hidden mt-6">
@@ -44,13 +56,20 @@ export default function ImgScroll() {
         Powerful Features for Icon Creation
       </h2>
       <div className="container mx-auto rounded overflow-hidden shadow-lg mt-10">
-        <div className="flex">
+        <div className="flex justify-center">
           <div className="w-1/2 p-4 justify-center">
-            {selectedImageIndex !== null && (
-              <ImgPreview
-                imageUrl={imageUrls[selectedImageIndex % imageUrls.length]}
-              />
-            )}
+            <div className="px-6 py-8 border dark:border-slate-700 bg-opacity-50 rounded-lg">
+              {selectedImageIndex !== null && (
+                <>
+                  <p className="text-start mb-6 dark:text-slate-100 font-bold sm:text-4xl font-signika-negative">
+                    {selectedImageName}
+                  </p>
+                  <ImgPreview
+                    imageUrl={imageUrls[selectedImageIndex % imageUrls.length]}
+                  />
+                </>
+              )}
+            </div>
           </div>
 
           <div className="w-1/3 p-4">

@@ -15,7 +15,7 @@ export default function PriceSection() {
         />
         <CardPrice 
           title="Premium" 
-          description="Perfect for advanced users and pet art lovers." 
+          description="Perfect for advanced users and city art lovers." 
           price="$9.99/month"
           galleryItems={["100 included credits", "Personal Gallery", "Downloadable PNGs", "No Watermark"]}
           buttonText="Coming soon"

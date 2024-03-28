@@ -4,6 +4,7 @@ import ImgScroll from "./components/ImgScroll";
 import Footer from "./components/Footer";
 import PriceSection from "./components/PriceSection";
 import DemoSection from "./components/DemoSection";
+import CommentsSection from "./components/CommentsSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <ImgScroll/>
       <DemoSection/>
       <PriceSection/>
+      <CommentsSection/>
       <Footer/>
     </main>
   );

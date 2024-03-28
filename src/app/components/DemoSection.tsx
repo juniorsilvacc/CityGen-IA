@@ -8,7 +8,7 @@ export default function DemoSection() {
         <div className="container mx-auto rounded overflow-hidden mt-10">
           <div className="flex justify-center">
             <div className="w-1/3 p-4 justify-center">
-              <h4 className="mb-4 mt-1 font-bold text-xl">Create your own citys!</h4>
+              <h4 className="mb-4 mt-1 font-bold text-slate-300 text-xl">Create your own citys!</h4>
               <p className="text-justify text-base text-slate-300">
                 Unleash your creativity with our AI urban landscape icon
                 generator! Select your favorite city, archetype, style, color

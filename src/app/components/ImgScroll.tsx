@@ -35,7 +35,7 @@ export default function ImgScroll() {
     .replace(".png", "");
 
   return (
-    <div className="w-full overflow-x-hidden mt-6">
+    <div className="w-full overflow-x-hidden mt-6 mb-16">
       <div className={`${styles.scrollContainer} flex w-56 space-x-4`}>
         {[...Array(repeatCount)].map((_, index) => (
           <React.Fragment key={index}>

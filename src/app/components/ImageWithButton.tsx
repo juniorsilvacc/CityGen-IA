@@ -31,26 +31,26 @@ export default function ImageWithButton() {
         dark:border-slate-600 border-gray-200"
         >
           <ul>
-            <li className="px-2 text-sm">{session?.user?.name}</li>
+            <li className="px-2 text-sm dark:text-slate-200">{session?.user?.name}</li>
             <li className="px-2 text-xs text-inherit mb-3 dark:text-slate-400">
               {session?.user?.email}
             </li>
             <li className="px-2 text-xs text-inherit mb-4 dark:text-slate-400">
               5 Credits remaining
             </li>
-            <li className="p-2 rounded cursor-pointer hover:bg-slate-800">
+            <li className="p-2 rounded cursor-pointer dark:hover:bg-slate-800">
               Buy credits
             </li>
-            <li className="p-2 rounded cursor-pointer hover:bg-slate-800">
+            <li className="p-2 rounded cursor-pointer dark:hover:bg-slate-800">
               Generate
             </li>
-            <li className="p-2 rounded cursor-pointer hover:bg-slate-800">
+            <li className="p-2 rounded cursor-pointer dark:hover:bg-slate-800">
               My Icons
             </li>
-            <li className="p-2 rounded cursor-pointer hover:bg-slate-800">
+            <li className="p-2 rounded cursor-pointer dark:hover:bg-slate-800">
               Community icons
             </li>
-            <button className="p-2 rounded cursor-pointer hover:bg-slate-800"
+            <button className="p-2 rounded cursor-pointer dark:hover:bg-slate-800"
             onClick={() => { toggleVisibility(); signOut(); }}
             >
               Logout

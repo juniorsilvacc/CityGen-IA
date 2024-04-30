@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { useSession, signOut  } from "next-auth/react";
+import { useSession, signOut } from "next-auth/react";
 import { useState } from "react";
 
 export default function ImageWithButton() {
@@ -19,18 +19,44 @@ export default function ImageWithButton() {
         <img
           src={userImage}
           alt="Imagem"
-          className="max-w-10 max-h-10 rounded-3xl"
+          className="h-12 w-12 object-cover rounded-full cursor-pointer"
           onClick={toggleVisibility}
         />
       )}
 
       {isShown && (
-        <button
-          className="bg-green-600 text-white px-3 py-1 absolute rounded top-full left-0 transform -translate-x-16 -translate-y-2"
-          onClick={() => { toggleVisibility(); signOut(); }}
+        <div
+          className="p-4 w-60 absolute top-12 right-8 rounded shadow-lg z-20 border
+        dark:bg-[#171717] bg-white
+        dark:border-slate-600 border-gray-200"
         >
-          Logout
-        </button>
+          <ul>
+            <li className="px-2 text-sm">{session?.user?.name}</li>
+            <li className="px-2 text-xs text-inherit mb-3 dark:text-slate-400">
+              {session?.user?.email}
+            </li>
+            <li className="px-2 text-xs text-inherit mb-4 dark:text-slate-400">
+              5 Credits remaining
+            </li>
+            <li className="p-2 rounded cursor-pointer hover:bg-slate-800">
+              Buy credits
+            </li>
+            <li className="p-2 rounded cursor-pointer hover:bg-slate-800">
+              Generate
+            </li>
+            <li className="p-2 rounded cursor-pointer hover:bg-slate-800">
+              My Icons
+            </li>
+            <li className="p-2 rounded cursor-pointer hover:bg-slate-800">
+              Community icons
+            </li>
+            <button className="p-2 rounded cursor-pointer hover:bg-slate-800"
+            onClick={() => { toggleVisibility(); signOut(); }}
+            >
+              Logout
+            </button>
+          </ul>
+        </div>
       )}
     </div>
   );
